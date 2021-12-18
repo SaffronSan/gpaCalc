@@ -12,13 +12,15 @@ body{
 }
 .button{
   background: #a2b9bc;
+  height: 30px;
+  width: 70px;
   color:  white;
   border: 1px solid white;
   padding: 1px;
   border-radius: none;
-  transition: .9s;
+  transition: .3s;
 }
 button:hover{
-  background: #898b8f;
-  padding: 5px;
+  background: #656668;
+  font-weight: bold;
 }
