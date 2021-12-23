@@ -5,101 +5,90 @@
         <script src="scripts.js"></script>
         <link href="style.css" rel="stylesheet">
     </head>
-    <body class="gpa" onload = "reset()">
-        <h1>Welcome to GPA Calc</h1>
-        <div class="content">
-            <div id="table">
-                <table id="gtab">
-                    <tr class="nonTab">
-                        <th colspan="3">
-                            <div class="control">
-                                <input onclick="addRow();" id="inner" type="button" value="Add">
-                                <input onclick="removeRow();" id="inner" type="button" value="Delete">
-                                <input onclick="reset();" id="inner" type="button" value="Reset">
-                            </div>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="type">
-                            Class<br>Type
-                        </th>
-                        <th>Class Name</th>
-                        <th>Grade</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select id="t0">
-                                <option value="AP">AP</option>
-                                <option value="HR">HR</option>
-                                <option value="None">None</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input class="name" id="n0" value="History">
-                        </td>
-                        <td>
-                            <input id="i0" value="97">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select id="t1">
-                                <option value="AP">AP</option>
-                                <option value="HR">HR</option>
-                                <option value="None">None</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input class="name" id="n1" value="Math">
-                        </td>
-                        <td>
-                            <input id="i1" input value="87">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select id="t2">
-                                <option value="AP">AP</option>
-                                <option value="HR">HR</option>
-                                <option value="None">None</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input class="name" id="n2" value="ELA">
-                        </td>
-                        <td>
-                            <input id="i2" value="90">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">
-                            <div class="xControl">
-                                <input onclick="" id="inner" type="button" value="GPA">
-                                <input onclick="calc();" id="inner" type="button" value="Calc">
-                            </div>
-                        </th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="result">
-            <table>
-                <tr>
-                    <th colspan="2">Result</th>
-                </tr>
-                <tr>
-                    <th>GPA</th>
-                    <td id="gpa">4.0</td>
-                </tr>
-                <tr>
-                    <th>Average Grade</th>
-                    <td id="ave">90</td>
-                </tr>
-                <tr>
-                    <th>Message</th>
-                    <td>Good Job</td>
-                </tr>
-            </table>
-        </div>
-    </body>
+    <body class="gpa" onload="reset();">
+	<h1> Welcome to GPA Calc</h1>
+	<div class="content">
+		<div id="table">
+			<table id="gtab">
+				<tr class="nonTab">
+					<th colspan="3">
+						<div class="control">
+							<input onclick = "addRow();" id = "inner" type = "button" value = "Add">
+                <input onclick = "removeRow();" id = "inner" type = "button" value = "Delete">
+                <input  onclick = "reset();" id = "inner" type = "button" value = "Reset">
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th id = "type">Class<br>Type</th>
+            <th id = "name" >Class Name</th>
+            <th id = "grade">Grade</th>
+          </tr>
+          <tr>
+            <td>
+              <select id = "t0">
+                <option value = "AP">AP</option>
+                <option value = "HR">HR</option>
+                <option value = "None">None</option>
+              </select>
+            </td>
+            <td><input class = "name" id = "n0" value="History"></td>
+            <td><input id = "i0" value="97"></td>
+          </tr>
+          <tr>
+            <td>
+              <select id = "t1">
+                <option value = "AP">AP</option>
+                <option value = "HR">HR</option>
+                <option value = "None">None</option>
+              </select>
+            </td>
+            <td><input class = "name" id = "n1" value="Math"></td>
+            <td><input  id = "i1" input value="87"></td>
+          </tr>
+          <tr>
+            <td>
+              <select id = "t2">
+                <option value = "AP">AP</option>
+                <option value = "HR">HR</option>
+                <option value = "None">None</option>
+              </select>
+            </td>
+            <td><input class = "name" id = "n2" value="ELA"></td>
+            <td><input id = "i2" value="90"></td>
+          </tr>
+          <tr>
+            <th colspan="3">
+                <div class = "xControl">
+                  <select onchange = "modeSet();" id = "mode">
+                    <option value = "gpa">GPA</option>
+                    <option value = "final">Final</option>
+                  </select>
+                  <input onclick = "evaluateProb();" type = "button" value = "Calc">
+                </div>
+             </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class = "result">
+      <table>
+        <tr>
+          <th colspan="2">Result</th>
+        </tr>
+        <tr>
+          <th id = "gradeTitle">GPA</th>
+          <td id = "gpa">Error</td>
+        </tr>
+        <tr>
+          <th>Average Grade</th>
+          <td id = "ave">Error</td>
+        </tr>
+        <tr>
+          <th>Message</th>
+          <td>Error</td>
+        </tr>
+      </table>
+    </div>
+</body>
 </html>
