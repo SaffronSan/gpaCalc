@@ -24,3 +24,56 @@ button:hover{
   background: #656668;
   font-weight: bold;
 }
+h1{
+  border: 2px solid black;
+  width: 200px;
+  text-align: center;
+  margin: 0px auto 0px auto;
+}
+.content{
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
+  width: 400px;
+}
+.control{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+}
+table,th,tr,td{
+  border: 2px solid black;
+  text-align: center;
+}
+.nonTab{
+  border: none;
+}
+tr input{
+  width: 50px;
+  background: gray;
+  color: white;
+}
+.name{
+  width: 75px;
+}
+#table{
+  width: 352px;
+}
+.xControl{
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.inner{
+  border: none;
+}
+.result{
+  margin: 10px auto 0px auto;
+  width: 183px;
+  border: 1px solid black;
+}
+.gpa{
+  background: gray;
+  color: white;
+}
